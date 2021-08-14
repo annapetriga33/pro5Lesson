@@ -1,13 +1,14 @@
 function isLannisterSoldier(armorColor, shield) {
-    if (armorColor === 'red' && shield === null || shield === 'lion') {
-        console.log(true);
+    if (armorColor == 'red' && shield === null || shield === 'lion') {
+        return true;
     } else {
-        console.log(false);
+        return false;
     }
 }
 
+isLannisterSoldier ('black', 'jfjfjf') ? console.log('Ланнистер') : console.log('Не ланнистер');
+isLannisterSoldier ('red', null) ? console.log('Ланнистер') : console.log('Не ланнистер');
+isLannisterSoldier ('black', null) ? console.log('Ланнистер') : console.log('Не ланнистер');
+isLannisterSoldier ('red', 'lion') ? console.log('Ланнистер') : console.log('Не ланнистер');
 
-isLannisterSoldier('black', 'jfjfjf');
-isLannisterSoldier('red', null);
-isLannisterSoldier(123);
-isLannisterSoldier('red', 'lion');
+
